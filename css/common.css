@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	/*color: #fff;*/
+	font-size: 12px;			
+}
+body {
+	background-color: #131313;
+	/*max-width: 750px;*/
+	margin: 0 auto;
+	height: 100%;
+}
+.cf::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.f-l {
+	float: left;
+}
+.f-r {
+	float: right;
+}
+.red {
+	color: red;
+}
+.orange {
+	color: orange;
+}
+.green {
+	color: #3CB371;
+}
+/*底部导航通用*/
+.bar-tab {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #CD2626;
+	height: 1rem;
+	width: 100%;
+}
+.tab-item {
+	display: inline-block;
+	width: 18%;
+	height: 50px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+	outline: none;
+	font-weight: bold;
+}
+.tab-label {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+}
+.active span {
+	color: #0894ec;
+}
+.topnav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.topnav .tab-item {
+	width: 15%;
+}
+.defaultStyle {
+	color: #fff;
+	font-size: 16px;
+}

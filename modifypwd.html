@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  <meta name="format-detection" content="telephone=no" />
+	<title>股票系统-修改密码</title>
+	<link rel="stylesheet" type="text/css" href="/stockpro_1.0.0/lib/layer/skin/layer.css">
+  <link rel="stylesheet" type="text/css" href="/stockpro_1.0.0/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/quotation.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/transfermoney.css">
+</head>
+<body>
+ <header class="header cf">
+   <a class="backbtn f-l" href="javascript:history.go(-1)">返回</a>
+   <span class="h-text">修改密码</span>
+ </header>
+ <ul class="moneyList">
+   <li class="list cf">
+     <label>密码类型:</label>
+     <input class="pwtype" checked="checked" name="pwtype" type="radio">
+     <span style="font-size:16px;">登录密码</span>
+     <input class="pwtype" name="pwtype" type="radio"> 
+     <span style="font-size:16px;">提款密码</span>
+   </li>
+   </li>
+   <li class="list cf">
+     <label>当前账户:</label>
+     <input class="allowMoney" type="text"></input>
+   </li>
+   <li class="list cf">
+     <label>旧密码:</label>
+     <input class="allowMoney" type="password"></input>
+   </li>
+   <li class="list cf">
+     <label>新密码:</label>
+     <input class="transferMoney" type="password"></input>
+   </li>
+   <li class="list cf">
+     <label>新密码:</label>
+     <input class="password" type="password"></input>
+   </li>
+ </ul>
+ <div class="confirmBtn">确认</div>
+</body>
+</html>
+
+<script src="/stockpro_1.0.0/lib/knockout-3.4.0.js"></script>
+<script src="/stockpro_1.0.0/lib/mobile-lib/zepto.min.js"></script>
+<script src="/stockpro_1.0.0/lib/jquery/dist/jquery.min.js"></script>
+<script src="/stockpro_1.0.0/lib/layer/src/layer.js"></script>
+<script src="/stockpro_1.0.0/js/public/jquery.cookie.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/rem.js"></script>
+<script type="text/javascript" src="js/modifypwd.js"></script>

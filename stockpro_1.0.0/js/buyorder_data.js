@@ -1,0 +1,28 @@
+//下单页面所用到的数据
+var AppViewModel = {
+	//现价
+  currentPrice:ko.observable(11),
+  //高
+  upPercent:ko.observable(22),
+  //开
+ 	kaiNumber:ko.observable(33),
+ 	//低
+  downPercent:ko.observable(44),
+  //涨跌幅度
+  updown:ko.observable(-0.009),
+  //额 
+ 	limitNumber:ko.observable(65),
+ 	//五档的数组
+ 	fiveArr:ko.observableArray([]),
+ 	//k线图
+ 	kxianImg:ko.observable(''),
+ 	//资金
+ 	fund:ko.observable(8989),
+ 	//信用资金
+ 	creditFund:ko.observable(5678),
+ 	//代码
+ 	code:ko.observable('000001'),
+ 	//手数
+ 	handNumber:ko.observable('')
+}
+ko.applyBindings(AppViewModel);

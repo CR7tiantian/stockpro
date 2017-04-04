@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  <meta name="format-detection" content="telephone=no" />
+	<title>股票系统-行情</title>
+	<link rel="stylesheet" type="text/css" href="/stockpro_1.0.0/lib/layer/skin/layer.css">
+	<link rel="stylesheet" href="/css/quotation.css">
+  <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+  <div class="search-box">
+  <span class="inputbox">
+    <i class="fa fa-search"></i>
+    <input class="search-input" type="text" placeholder="请输入关键字...">
+  </span>
+    <span class="search-btn">搜索</span>
+  </div>
+  <ul class="selectList cf">
+    <li class="selctAll active">全部</li>
+    <li class="autoSelect">自选</li>
+  </ul>
+  <div class="stockbox">
+    <ul class="stockheader cf">
+      <li class="f-l header" style="background:#EE4000">名称</li>
+      <li class="f-l header" style="background:Orange">现价</li>
+      <li class="f-l header" style="background:#3CB371">涨幅</li>
+    </ul>
+    <ul class="stocklist" data-bind="foreach:{data:listData,as:'obj'}">
+      <li class="list-detail cf">
+        <div class="stock-detail f-l">
+          <div class="stockname" data-bind="text:obj.stockname"></div>
+          <div class="stockcode" data-bind="text:obj.stockcode"></div>
+        </div>
+        <span class="stockprice f-l" data-bind="text:obj.stockprice"></span>
+        <span class="uppercent f-l" data-bind="{text:obj.uppercent,css:{'green':obj.uppercent<0}}"></span>
+      </li>
+    </ul>
+    <div class="pagebtn">
+      <span class="prev-page">上一页</span>
+      <span class="next-page">下一页</span>
+      <select class="pages" data-bind="foreach:{data:totalpageArr,as:'obj'}">
+        <option data-bind="{text:obj+'页',value:obj}"></option>
+      </select>
+    </div>
+  </div>
+  <nav class="bar bar-tab">
+        <a class="tab-item external active" href="javascript:void(0)">
+          <span class="tab-label">行情</span>
+        </a>      
+        <a class="tab-item external" href="buyorder.html">
+          <span class="tab-label">下单</span>
+        </a>
+        <a class="tab-item external" href="position.html">
+          <span class="tab-label">持仓</span>
+        </a>
+        <a class="tab-item external" href="unwinding.html">
+          <span class="tab-label">平仓</span>
+        </a>
+             <a class="tab-item external" href="more.html">
+          <span class="tab-label">更多</span>
+        </a>
+  </nav>
+</body>
+</html>
+<script src="/stockpro_1.0.0/lib/knockout-3.4.0.js"></script>
+<script src="/stockpro_1.0.0/lib/mobile-lib/zepto.min.js"></script>
+<script src="/stockpro_1.0.0/lib/jquery/dist/jquery.min.js"></script>
+<script src="/stockpro_1.0.0/lib/layer/src/layer.js"></script>
+<script src="/stockpro_1.0.0/js/public/jquery.cookie.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/rem.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/common.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/quotation_data.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/quotation.js"></script>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  <meta name="format-detection" content="telephone=no" />
+	<title>股票系统-下单</title>
+	<link rel="stylesheet" type="text/css" href="/stockpro_1.0.0/lib/layer/skin/layer.css">
+  <link rel="stylesheet" type="text/css" href="/stockpro_1.0.0/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/quotation.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/buyorder.css">
+</head>
+<body>
+ <div class="header">
+   <table class="table-header" width="100%" style="text-align:left; white-space:nowrap;margin-left:10px">
+    <tbody><tr>
+      <td class="td" style="width: 33%;  color:White;padding:0px; font-size: 16px;">
+        现价：
+        <span id="xianjia" class="f13"
+        data-bind="text:currentPrice"></span>
+      </td>
+      <td class="td" style="width: 33%;  color:White;padding:0px;font-size: 16px;">
+        高：
+      <span id="zuigao" class="f13"
+      data-bind="text:upPercent"></span>
+      </td>
+      <td style="width: 34%;  color:White;padding:0px;font-size: 16px;">
+        开：
+      <span id="jinkai" class="f13"
+      data-bind="text:kaiNumber"></span>
+        </td>
+    </tr>
+    <tr>
+      <td class="defaultStyle">
+       涨跌幅度：
+        <span id="zdfd" class="f13"
+        data-bind="text:updown,style:{color:updown()<0?'green':'#ff3300'}"></span>
+      </td>
+      <td class="style1 defaultStyle">
+          低：
+      <span id="zuidi" class="f13"
+      data-bind="text:downPercent"></span>
+      </td>
+      <td class="style2 defaultStyle">
+          额：
+       <span id="cje" data-bind="text:limitNumber" class="f13"></span>
+      </td>
+      </tr>
+    </tbody>
+    </table>
+ </div>
+ <!-- k线图区域 -->
+    <div class="kxiantu cf">
+      <img class="k_img f-l">
+      <table class="wudang">
+        <tr class="first-row">
+          <td class="red" style="background:red">五档</td>
+          <td class="orange"style="background:orange">价格</td>
+          <td class="green" style="background:#3CB371">数量</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖五</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖四</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖三</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖二</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖一</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">最新价</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买一</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买二</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买三</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买四</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买五</td>
+          <td class="orange">9.21</td>
+          <td class="green">3.383</td>
+        </tr>
+      </table>
+    </div>
+    <table class="downbox">
+      <tr>
+        <td>资金:</td>
+        <td style="width:2.2rem;color:#FF3300" data-bind="text:fund"></td>
+        <td>信用资金:</td>
+        <td style="width:2.2rem;color:#FF3300" data-bind="text:creditFund"></td>
+      </tr>
+      <tr>
+        <td>类型:</td>
+        <td>
+        <select class="bourse">
+          <option value="shenzhen">深证</option>
+          <option value="shanghai">上证</option>  
+        </select>
+        </td>
+        <td style="margin-left:0.4rem;">方向:</td>
+        <td>
+          <input class="radio" type="radio" name="direction" value="0" checked="true">多
+          <input class="radio" type="radio" name="direction" value="1">空
+        </td>
+      </tr>
+      <tr>
+        <td>代码:</td>
+        <td>
+          <input class="code" type="text" data-bind="value:code">
+        </td> 
+        <td style="margin-left:0.4rem;">手数:</td>
+        <td>
+          <input class="shoushu" type="text">
+        </td>
+      </tr>
+    </table>
+    <div class="buybtn">
+      买入
+    </div>
+  <nav class="bar bar-tab">
+        <a class="tab-item external" href="quotation.html">
+          <span class="tab-label">行情</span>
+        </a>      
+        <a class="tab-item external active" href="javascript:void(0)">
+          <span class="tab-label">下单</span>
+        </a>
+        <a class="tab-item external" href="position.html">
+          <span class="tab-label">持仓</span>
+        </a>
+        <a class="tab-item external" href="unwinding.html">
+          <span class="tab-label">平仓</span>
+        </a>
+             <a class="tab-item external" href="more.html">
+          <span class="tab-label">更多</span>
+        </a>
+  </nav>
+</body>
+</html>
+
+<script src="/stockpro_1.0.0/lib/knockout-3.4.0.js"></script>
+<script src="/stockpro_1.0.0/lib/mobile-lib/zepto.min.js"></script>
+<script src="/stockpro_1.0.0/lib/jquery/dist/jquery.min.js"></script>
+<script src="/stockpro_1.0.0/lib/layer/src/layer.js"></script>
+<script src="/stockpro_1.0.0/js/public/jquery.cookie.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/rem.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/buyorder_data.js"></script>
+<script type="text/javascript" src="/stockpro_1.0.0/js/buyorder.js"></script>
