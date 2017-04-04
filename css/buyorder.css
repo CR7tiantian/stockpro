@@ -5,7 +5,7 @@ td {
 	font-family: '';
 }
 .kxiantu {
-	height: 400px;
+	height: 7rem;
 	margin-top: 5px;
 	width: 100%;
 	border-bottom: 1px solid #eee;
@@ -26,11 +26,11 @@ td {
 	color: #fff;
 	height: 18px;
 	line-height: 18px;
-		font-size: 14px;
+	font-size: 14px;
 }
 .other-row td {
-	height: 34px;
-	line-height: 34px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 	font-size: 14px;
 }
