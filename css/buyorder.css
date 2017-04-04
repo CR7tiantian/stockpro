@@ -11,6 +11,11 @@ td {
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
 }
+.k_img {
+	width: 4rem;
+	height: 5.9rem;
+	border-bottom: none;
+}
 .wudang {
 	width: 3.5rem;
 	float: right;
@@ -29,8 +34,8 @@ td {
 	font-size: 14px;
 }
 .other-row td {
-	height: 24px;
-	line-height: 24px;
+	height: 25px;
+	line-height: 25px;
 	text-align: center;
 	font-size: 14px;
 }
