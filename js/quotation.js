@@ -3,7 +3,7 @@ window.onload = function() {
 		//切换全部和自选列表
 		changeList:function(target) {
 			target.addClass('active').siblings().removeClass('active');
-			//切换到自选
+			//切换到自选(此时要请求接口获取listData)
 			if (target.hasClass('autoSelect')) {
 					AppViewModel.listData([{
 					stockname:'万科自选',
@@ -12,6 +12,7 @@ window.onload = function() {
 					uppercent:-0.09
 				}])
 			} else {
+				//切换到全部
 				AppViewModel.listData([{
 					stockname:'万科全部',
 					stockcode:'000006',
@@ -22,7 +23,8 @@ window.onload = function() {
 		},
 		//获取列表数据和翻页参数
 		getListData:function(param) {
-			//请求接口参数
+			//请求接口后给listData赋值然后在页面循环渲染
+			//以下是假数据
 
 			AppViewModel.listData([
 			 {
@@ -42,6 +44,7 @@ window.onload = function() {
 				uppercent:-0.09
 			}
 			]);
+			//总页数(暂时写死,由后台提供)
 			var totalpages = 5;
 			AppViewModel.totalpageArr(common.createArr(totalpages));
 		},
@@ -87,9 +90,15 @@ window.onload = function() {
 		console.log($(this).val())
 	});
 	//点击搜索
-	$('.search-input').on('click',function() {
-		var val = $.trim($(this).val());
-		//请求接口
+	$('.search-btn').on('click',function() {
+		var val = $.trim($('.search-input').val());
+		if (!val) {
+			layer.msg('请输入搜索条件',{icon:7})
+		} else {
+			console.log('搜索')
+			//请求接口获取listData
+		}
+
 	});
 	$('.search-input').on('focus',mainMethod.focusChange)
 	//翻页

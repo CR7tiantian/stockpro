@@ -52,68 +52,20 @@
  </div>
  <!-- k线图区域 -->
     <div class="kxiantu cf">
-      <img class="k_img f-l" src="images/Logo.png">
+      <img class="k_img f-l"data-bind="attr:{src:kxianImg}">
       <table class="wudang">
         <tr class="first-row">
           <td class="red" style="background:red">五档</td>
           <td class="orange"style="background:orange">价格</td>
           <td class="green" style="background:#3CB371">数量</td>
         </tr>
+        <!-- ko foreach:{data:fiveArr,as:'obj'} -->
         <tr class="other-row">
-          <td class="red">卖五</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
+          <td class="red" data-bind="text:obj.text"></td>
+          <td class="orange" data-bind="text:obj.price"></td>
+          <td class="green" data-bind="text:obj.count"></td>
         </tr>
-        <tr class="other-row">
-          <td class="red">卖四</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">卖三</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">卖二</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">卖一</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">最新价</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">买一</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">买二</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">买三</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">买四</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
-        <tr class="other-row">
-          <td class="red">买五</td>
-          <td class="orange">9.21</td>
-          <td class="green">3.383</td>
-        </tr>
+        <!-- /ko -->
       </table>
     </div>
     <table class="downbox">
