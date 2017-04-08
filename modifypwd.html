@@ -6,10 +6,15 @@
   <meta name="format-detection" content="telephone=no" />
 	<title>股票系统-修改密码</title>
 	<link rel="stylesheet" type="text/css" href="lib/layer/skin/layer.css">
-  <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/quotation.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/transfermoney.css">
+  <style type="text/css">
+  .text {
+    font-size: 16px;
+    color: #fff;
+  }
+  </style>
 </head>
 <body>
  <header class="header cf">
@@ -20,26 +25,26 @@
    <li class="list cf">
      <label>密码类型:</label>
      <input class="pwtype" checked="checked" name="pwtype" type="radio">
-     <span style="font-size:16px;">登录密码</span>
+     <span class="text">登录密码</span>
      <input class="pwtype" name="pwtype" type="radio"> 
-     <span style="font-size:16px;">提款密码</span>
+     <span class="text">提款密码</span>
    </li>
    </li>
    <li class="list cf">
      <label>当前账户:</label>
-     <input class="allowMoney" type="text"></input>
+     <input class="allowMoney currentAccount" type="text" readonly="readonly">
    </li>
    <li class="list cf">
      <label>旧密码:</label>
-     <input class="allowMoney" type="password"></input>
+     <input class="allowMoney oldpwd" type="password">
    </li>
    <li class="list cf">
      <label>新密码:</label>
-     <input class="transferMoney" type="password"></input>
+     <input class="transferMoney newpwd" type="password">
    </li>
    <li class="list cf">
      <label>新密码:</label>
-     <input class="password" type="password"></input>
+     <input class="password confirmnewpwd" type="password">
    </li>
  </ul>
  <div class="confirmBtn">确认</div>

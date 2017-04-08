@@ -6,7 +6,6 @@
   <meta name="format-detection" content="telephone=no" />
 	<title>股票系统-平仓</title>
 	<link rel="stylesheet" type="text/css" href="lib/layer/skin/layer.css">
-  <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/quotation.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/unwinding.css">
@@ -24,27 +23,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="table-row">
+      <tr class="table-row" data-bind="foreach:{data:listData,as:'obj'}">
         <td class="first">
-          <span class="stockname">万科A</span>
-          <span class="stockcode">000002</span>
+          <span class="stockname" data-bind="text:obj.code.name"></span>
+          <span class="stockcode" data-bind="text:obj.code.number"></span>
         </td>
-        <td class="second">2</td>
-        <td class="third">3</td>
-        <td class="fourth">4</td>
-        <td class="five">5</td>
-        <td class="six">3月20号</td>
-      </tr>
-      <tr class="table-row">
-        <td class="first">
-          <span class="stockname">万科A</span>
-          <span class="stockcode">000002</span>
-        </td>
-        <td class="second">2</td>
-        <td class="third">3</td>
-        <td class="fourth">4</td>
-        <td class="five">5</td>
-        <td class="six">6</td>
+        <td class="second" data-bind="text:obj.yingkui"></td>
+        <td class="third" data-bind="text:obj.buyprice"></td>
+        <td class="fourth" data-bind="text:obj.sellprice"></td>
+        <td class="five" data-bind="text:obj.handnumber"></td>
+        <td class="six" data-bind="text:common.formatTime(obj.date)"></td>
       </tr>
     </tbody>
     </table>
@@ -74,6 +62,7 @@
 <script src="lib/jquery/dist/jquery.min.js"></script>
 <script src="lib/layer/src/layer.js"></script>
 <script src="js/public/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/rem.js"></script>
 <script type="text/javascript" src="js/unwinding_data.js"></script>
 <script type="text/javascript" src="js/unwinding.js"></script>

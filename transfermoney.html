@@ -6,7 +6,6 @@
   <meta name="format-detection" content="telephone=no" />
 	<title>股票系统-资金转出</title>
 	<link rel="stylesheet" type="text/css" href="lib/layer/skin/layer.css">
-  <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/quotation.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/transfermoney.css">
@@ -15,20 +14,20 @@
  <header class="header cf">
    <a class="backbtn f-l" href="javascript:history.go(-1)">返回</a>
    <span class="h-text">资金转出</span>
-   <a class="detail f-r" href="">明细</a>
+  <!--  <a class="detail f-r" href="">明细</a> -->
  </header>
  <ul class="moneyList">
    <li class="list cf">
      <label>可提金额:</label>
-     <input class="allowMoney" type="text"></input>
+     <input class="allowMoney" type="text" readonly="readonly">
    </li>
    <li class="list cf">
      <label>提款金额:</label>
-     <input class="transferMoney" type="text"></input>
+     <input class="transferMoney" type="text">
    </li>
    <li class="list cf">
      <label>提款金额:</label>
-     <input class="password" type="password"></input>
+     <input class="password confirmMoney" type="text">
    </li>
  </ul>
  <div class="confirmBtn">确认</div>

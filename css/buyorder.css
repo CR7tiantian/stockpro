@@ -90,3 +90,14 @@ td input[type="text"] {
 .g13 {
 	color: green !important;
 }
+.table-header {
+	text-align:left; 
+	white-space:nowrap;
+	margin-left:10px
+}
+.specialtd {
+	width: 33%;  
+	color:#fff;
+	padding:0px;
+	font-size: 16px;
+}

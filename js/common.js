@@ -351,6 +351,13 @@ var common = {
     }
     return d ? new Date(d).Format(type) : type.replace(/[yMdhms]/g, '0');
   },
+  //格式化时间
+  formatTime:function(val) {
+    var time = new Date(val);
+    var month = time.getMonth()+1;
+    var date = time.getDate();
+    return month+'月'+date+'号'
+  },
   getSuccessMethod: function(method) {
     var str_tempmethod = method.substring(method.indexOf(".") + 1);
     str_tempmethod = str_tempmethod.replace(/\./g, "_");
