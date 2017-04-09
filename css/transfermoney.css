@@ -21,76 +21,6 @@
 .detail {
   margin-right: 0.4rem;
 }
-.backbtn:after {
-    position: absolute;
-    right: 40px;
-    top: 10px;
-    width: 0;
-    height: 0;
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-right: 12px solid #fff;
-    border-bottom: 12px solid transparent;
-    content: '';
-    -webkit-transition: all .25s;
-       -moz-transition: all .25s;
-        -ms-transition: all .25s;
-         -o-transition: all .25s;
-            transition: all .25s;
-}
-.backbtn:before {
-    position: absolute;
-    right: 37px;
-    top: 10px;
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-right: 12px solid #CD2626;
-    border-bottom: 12px solid transparent;
-    content: '';
-    z-index: 10;
-    -webkit-transition: transform .25s;
-       -moz-transition: transform .25s;
-        -ms-transition: transform .25s;
-         -o-transition: transform .25s;
-            transition: transform .25s;
-}
-.detail:after {
-    position: absolute;
-    right: -19px;
-    top: 10px;
-    width: 0;
-    height: 0;
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-left: 12px solid #fff;
-    border-bottom: 12px solid transparent;
-    content: '';
-    -webkit-transition: all .25s;
-       -moz-transition: all .25s;
-        -ms-transition: all .25s;
-         -o-transition: all .25s;
-            transition: all .25s;
-}
-.detail:before {
-    position: absolute;
-    right: -17px;
-    top: 10px;
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-left: 12px solid #CD2626;
-    border-bottom: 12px solid transparent;
-    content: '';
-    z-index: 10;
-    -webkit-transition: transform .25s;
-       -moz-transition: transform .25s;
-        -ms-transition: transform .25s;
-         -o-transition: transform .25s;
-            transition: transform .25s;
-}
 .h-text {
   position: absolute;
   width: 3rem;
@@ -124,4 +54,10 @@
   font-size: 18px;
   margin: 0 auto;
   background-color: #3399FF;
+}
+.header .arrow {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  margin-top: -12px;
 }

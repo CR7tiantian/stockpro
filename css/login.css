@@ -68,3 +68,6 @@ body {
 	cursor: pointer;
 	margin-top: 0.8rem;
 }
+.text {
+	font-size: 18px;
+}

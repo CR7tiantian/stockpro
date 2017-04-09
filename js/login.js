@@ -3,9 +3,10 @@ var loginMethod = {
 		var username = $.trim($('.username').val());
 		var password = $.trim($('.password').val());
 		if (username =='' || password =='') {
-			layer.msg('用户名或密码不能为空',{icon:7});
+			layer.alert('用户名或密码不能为空',{icon:7});
 				return false;
-		} 
+		}
+		console.log('可以请求接口了') 
 		//请求接口
 		var param = {
 			loginName:'testguo',
