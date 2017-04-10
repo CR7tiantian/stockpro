@@ -48,11 +48,12 @@ body {
 	left: 0;
 	background-color: #CD2626;
 	height: 1rem;
+	line-height: 1rem;
 	width: 100%;
 }
 .tab-item {
 	display: inline-block;
-	width: 18%;
+	width: 1.5rem;
 	height: 50px;
 	text-decoration: none;
 	color: #fff;
@@ -60,14 +61,17 @@ body {
 	line-height: 1rem;
 	outline: none;
 	font-weight: bold;
+	float: left;
+	font-size: 18px;
 }
 .tab-label {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 1;
 }
-.active span {
+.active {
 	color: #0894ec;
+	font-size: 18px;
 }
 .topnav {
 	position: fixed;
