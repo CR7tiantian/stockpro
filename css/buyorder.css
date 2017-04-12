@@ -3,9 +3,17 @@ body {
 }
 td {
 	font-family: '';
+	font-size: 16px;
+	color: #fff;
+
+}
+.header-order {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
 .kxiantu {
-	height: 6rem;
+	height: 5.5rem;
 	margin-top: 5px;
 	width: 100%;
 	border-bottom: 1px solid #eee;
@@ -13,7 +21,7 @@ td {
 }
 .k_img {
 	width: 4rem;
-	height: 5.9rem;
+	height: 5.4rem;
 	border-bottom: none;
 }
 .wudang {
@@ -44,7 +52,6 @@ td {
 	display: inline-block;
 	/*width: 80px;*/
 	font-size: 16px;
-	color: #fff;
 	font-family: '微软雅黑';
 }
 .downbox tr {
@@ -60,15 +67,6 @@ td {
 .bourse option {
 	font-size: 16px;
 	color: #000;
-}
-td input[type="text"] {
-	width: 1.6rem;
-	background-color: #000;
-	color: #fff;
-	border:1px solid #eee;
-	height: 25px;
-	font-size: 14px;
-	font-family: '微软雅黑';
 }
 .buybtn {
 	width: 90%;
@@ -95,9 +93,50 @@ td input[type="text"] {
 	white-space:nowrap;
 	margin-left:10px
 }
-.specialtd {
-	width: 33%;  
-	color:#fff;
-	padding:0px;
+.firsttd {
+	width: 2rem;
+	color: red;
+	font-size: 24px;
+	font-weight: bold;
+}
+.yellow {
+	color: yellow;
 	font-size: 16px;
+}
+.width100 {
+	width: 2rem;
+}
+.red16 {
+	color: red;
+	font-size: 16px;
+}
+.red18 {
+	color: red;
+	font-size: 18px;
+}
+.green16 {
+	color: #0ade12;
+	font-size: 16px;
+}
+.zixuanbtn {
+	display: inline-block;
+	width: 1rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #fff;
+	text-align: center;
+	margin: 12px auto;
+	font-size: 18px;
+	background-color: #ef9008;
+}
+.border-bot {
+	border-bottom: 1px solid #fff;
+}
+.fundstyle {
+	width: 2rem;
+	color: #ff3300;
+}
+.codeipt {
+	width: 1.8rem;
+	height: 22px;
 }

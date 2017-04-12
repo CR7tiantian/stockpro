@@ -11,91 +11,137 @@
   <link rel="stylesheet" type="text/css" href="css/buyorder.css">
 </head>
 <body>
- <div class="header-order">
-   <table class="table-header" width="100%">
-    <tbody><tr>
-      <td class="td specialtd">
-        现价：
-        <span id="xianjia" class="f13"
-        data-bind="text:currentPrice"></span>
+ <div class="header-order cf">
+   <table class="table-header f-l">
+    <tbody>
+    <tr>
+      <td class="td firsttd">
+        18.44
       </td>
-      <td class="td specialtd">
-        高：
-      <span id="zuigao" class="f13"
-      data-bind="text:upPercent"></span>
+      <td class="td width100">
+        换:
+      <span class="yellow">52.07%</span>
       </td>
-      <td class="specialtd">
-        开：
-      <span id="jinkai" class="f13"
-      data-bind="text:kaiNumber"></span>
-        </td>
+      <td  class="td width100">
+        高:
+      <span class="red16">19.20</span>
+      </td>
     </tr>
     <tr>
-      <td class="defaultStyle">
-       涨跌幅度：
-        <span id="zdfd" class="f13"
-        data-bind="text:updown,style:{color:updown()<0?'green':'#ff3300'}"></span>
+      <td class="width100">
+        <span class="red18">0.99</span>
+        <span class="red18">5.67</span>
       </td>
-      <td class="style1 defaultStyle">
-          低：
-      <span id="zuidi" class="f13"
-      data-bind="text:downPercent"></span>
+      <td class="">
+          开:
+      <span class="green16">17.38</span>
       </td>
-      <td class="style2 defaultStyle">
-          额：
-       <span id="cje" data-bind="text:limitNumber" class="f13"></span>
+      <td>
+          低:
+       <span class="green16">3.88</span>
       </td>
       </tr>
     </tbody>
     </table>
+    <span class="zixuanbtn f-l">-自选</span>
  </div>
  <!-- k线图区域 -->
     <div class="kxiantu cf">
-      <img class="k_img f-l"data-bind="attr:{src:kxianImg}">
+      <img class="k_img f-l" src="images/kxiantu.gif">
       <table class="wudang">
         <tr class="first-row">
           <td class="red" style="background:red">五档</td>
           <td class="orange"style="background:orange">价格</td>
           <td class="green" style="background:#3CB371">数量</td>
         </tr>
-        <!-- ko foreach:{data:fiveArr,as:'obj'} -->
         <tr class="other-row">
-          <td class="red" data-bind="text:obj.text"></td>
-          <td class="orange" data-bind="text:obj.price"></td>
-          <td class="green" data-bind="text:obj.count"></td>
+          <td class="red">卖五</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
         </tr>
-        <!-- /ko -->
+        <tr class="other-row">
+          <td class="red">卖四</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖三</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">卖二</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row border-bot">
+          <td class="red">卖一</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买五</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买四</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买三</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买二</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
+        <tr class="other-row">
+          <td class="red">买一</td>
+          <td class="orange">9.2</td>
+          <td class="green">3.2</td>
+        </tr>
       </table>
     </div>
     <table class="downbox">
       <tr>
-        <td>资金:</td>
-        <td style="width:2.2rem;color:#FF3300" data-bind="text:fund"></td>
         <td>信用资金:</td>
-        <td style="width:2.2rem;color:#FF3300" data-bind="text:creditFund"></td>
+        <td class="fundstyle">5555</td>
+        <td>可用资金:</td>
+        <td class="fundstyle">6666</td>
       </tr>
       <tr>
-        <td>类型:</td>
+        <td>股票代码:</td>
         <td>
-        <select class="bourse">
-          <option value="shenzhen">深证</option>
-          <option value="shanghai">上证</option>  
-        </select>
+          <input class="codeipt"></input>
         </td>
-        <td style="margin-left:0.4rem;">方向:</td>
+        <td>最大可买:</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr>
+        <td>股票名称:</td>
+        <td class="width100">
+          
+        </td> 
+        <td>买入手数:</td>
+        <td>
+          <input class="codeipt" type="text">
+        </td>
+      </tr>
+      <tr>
+      <td>最新价格:</td>
+        <td class="width100">
+          
+        </td>
+        <td>买入类型:</td>
         <td>
           <input class="radio" type="radio" name="direction" value="0" checked="true">多
           <input class="radio" type="radio" name="direction" value="1">空
-        </td>
-      </tr>
-      <tr>
-        <td>代码:</td>
-        <td>
-          <input class="code" type="text" data-bind="value:code">
-        </td> 
-        <td style="margin-left:0.4rem;">手数:</td>
-        <td>
-          <input class="shoushu" type="text">
         </td>
       </tr>
     </table>
