@@ -1,5 +1,7 @@
 body {
 	background-color: #000;
+	padding:0;
+	margin: 0;
 }
 td {
 	font-family: '';
@@ -8,9 +10,7 @@ td {
 
 }
 .header-order {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+	box-sizing:border-box;
 }
 .kxiantu {
 	height: 5.5rem;
@@ -48,7 +48,7 @@ td {
 	font-size: 14px;
 }
 .downbox td {
-	padding-left: 10px;
+	padding-left: 0.3rem;
 	display: inline-block;
 	/*width: 80px;*/
 	font-size: 16px;
@@ -91,7 +91,6 @@ td {
 .table-header {
 	text-align:left; 
 	white-space:nowrap;
-	margin-left:10px
 }
 .firsttd {
 	width: 2rem;
@@ -120,12 +119,12 @@ td {
 }
 .zixuanbtn {
 	display: inline-block;
-	width: 1rem;
+	width: 1.2rem;
 	height: 0.6rem;
 	line-height: 0.6rem;
 	color: #fff;
 	text-align: center;
-	margin: 12px auto;
+	margin: 14px auto;
 	font-size: 18px;
 	background-color: #ef9008;
 }
@@ -133,10 +132,15 @@ td {
 	border-bottom: 1px solid #fff;
 }
 .fundstyle {
-	width: 2rem;
+	width: 1.6rem;
 	color: #ff3300;
 }
 .codeipt {
-	width: 1.8rem;
+	width: 1.3rem;
 	height: 22px;
+	border: none;
+	outline: none;
+}
+.width80 {
+	width: 1.6rem;
 }
