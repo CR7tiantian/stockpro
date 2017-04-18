@@ -74,13 +74,12 @@
 	width: 33.33333%;
 }
 .stocklist {
-	overflow: auto;
 	list-style: none;
-	height: 6rem;
+	height: 8rem;
 	overflow: auto;
 }
 .list-detail {
-	height: 40px;
+	height: 0.8rem;
 	border-bottom: 1px solid #353533;
 }
 .stock-detail,.stockprice,.uppercent {
@@ -103,7 +102,7 @@
 	height: 0.48rem;
 	line-height: 0.48rem;
 	width: 4rem;
-	margin: 0.1rem auto;
+	margin: 0.2rem auto 1rem auto;
 }
 .prev-page,.next-page {
 	position: relative;
@@ -137,4 +136,5 @@
 .green {
 	color: green;
 } 
+
 
