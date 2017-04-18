@@ -102,7 +102,7 @@
 	height: 0.48rem;
 	line-height: 0.48rem;
 	width: 4rem;
-	margin: 0.3rem auto 1rem auto;
+	margin: 0.3rem auto 1.5rem auto;
 }
 .prev-page,.next-page {
 	position: relative;
@@ -116,7 +116,7 @@
 	background:#fff url('../images/left-sm-arrow.png') -0.02rem 0.1rem no-repeat;
 }
 .next-page {
-	background:#fff url('../images/right-sm-arrow.png') 0.96rem 0.1rem no-repeat;
+	background:#fff url('../images/right-sm-arrow.png') 0.98rem 0.1rem no-repeat;
 }
 .pages {
 	width: 1.2rem;
