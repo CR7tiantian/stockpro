@@ -11,35 +11,37 @@
   <link rel="stylesheet" type="text/css" href="css/position.css">
 </head>
 <body>
-  <nav class="bar bar-tab topnav">
-        <a class="tab-item external" href="#">
-          <span class="tab-label">操作</span>
-        </a>      
-        <a class="tab-item external" href="#">
-          <span class="tab-label">现价</span>
-        </a>
-        <a class="tab-item external" href="#">
-          <span class="tab-label">盈亏</span>
-        </a>
-        <a class="tab-item external" href="#">
-          <span class="tab-label">名称</span>
-        </a>
-        <a class="tab-item external" href="#">
-          <span class="tab-label">多/空</span>
-        </a>
-        <a class="tab-item external" href="#">
-          <span class="tab-label">手数</span>
-        </a>
-  </nav>
-  <!-- 中间内容区域 -->
-
-  <!-- 中间内容区域end -->
+ <table class="main-content">
+    <thead class="thead">
+      <tr>
+        <td>操作</td>
+        <td>现价</td>
+        <td>盈亏</td>
+        <td>名称</td>
+        <td>多/空</td>
+        <td>手数</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-row">
+        <td onclick="closePostion('853193901496852480 }','000008','8.82')"><button class="pcbtn" style="font-size:16px">平仓</button></td>
+        <td class="second">8.82</td>
+        <td class="third">0.00</td>
+         <td class="first">
+          <span class="stockname">000008</span>
+          <span class="stockcode">神州高铁</span>
+        </td>
+        <td class="five">多</td>
+        <td class="six">15</td>
+      </tr>
+    </tbody>
+    </table>
   <nav class="bar bar-tab">
         <a class="tab-item external" href="quotation.html">
-          <span class="tab-label">行情</span>
+          行情
         </a>      
         <a class="tab-item external" href="buyorder.html">
-          <span class="tab-label">下单</span>
+          下单</span>
         </a>
         <a class="tab-item external active" href="javascript:void(0)">
           <span class="tab-label">持仓</span>

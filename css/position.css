@@ -1,0 +1,60 @@
+.main-content {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table-row {
+	height: 0.86rem;
+}
+.table-row td {
+	height: 0.86rem;
+	line-height: 0.86rem;
+	text-align: center;
+	color: lightgrey;
+	font-size: 16px;
+	border:1px solid #7e7e7e;
+	border-right: none;
+	border-left: none;
+}
+.first {
+	/*width: 25.1%;*/
+}
+.stockname,.stockcode {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	color: #fff;
+}
+.stockcode {
+	color: #7E7E7E;
+}
+.second	{
+	/*width: 15.5333%;*/
+	color: green !important;
+}
+.third,.fourth {
+	/*width: 15.7333%;*/
+	color: #FB4834 !important;
+}
+.fourth {
+	color:green !important;
+	border-right: none !important;
+}
+.five {
+	/*width: 15%;*/
+	color: #fff !important;
+}
+.six {
+	color: #FFF68F !important;
+}
+.thead tr {
+	width: 100%;
+	height: 1rem;
+	background-color: #CD2626;
+	color: #fff;
+	text-align: center;
+
+}
+.thead tr td {
+	font-size: 16px;
+	border:none;
+}

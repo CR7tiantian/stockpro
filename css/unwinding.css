@@ -12,6 +12,8 @@
 	color: lightgrey;
 	font-size: 16px;
 	border:1px solid #7e7e7e;
+	border-right: none;
+	border-top:none;
 }
 .first {
 	width: 25.1%;

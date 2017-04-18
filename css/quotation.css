@@ -1,4 +1,3 @@
-
 .fa-search {
 	color: #ddd;
 	font-size: 16px;
@@ -56,9 +55,10 @@
 .autoSelect {
 	float: right;
 }
-.active {
-	color: red;
+.active-select {
+	color: #0894ec;
 	border-bottom-color: red;
+	font-size: 22px;
 }
 .stockheader {
 	list-style: none;
@@ -76,7 +76,7 @@
 .stocklist {
 	overflow: auto;
 	list-style: none;
-	height: 8rem;
+	height: 7rem;
 	overflow: auto;
 }
 .list-detail {
@@ -114,10 +114,10 @@
 	font-size: 10px;
 	font-weight: bold;
 	border-radius: 4px;
-	background:#fff url('../images/left-sm-arrow.png') -1px 5px no-repeat;
+	background:#fff url('../images/left-sm-arrow.png') -0.02rem 0.1rem no-repeat;
 }
 .next-page {
-	background:#fff url('../images/right-sm-arrow.png') 48px 5px no-repeat;
+	background:#fff url('../images/right-sm-arrow.png') 0.96rem 0.1rem no-repeat;
 }
 .pages {
 	width: 1.2rem;
