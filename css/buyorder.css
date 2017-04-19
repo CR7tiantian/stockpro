@@ -55,7 +55,7 @@ td {
 	/*width: 25%;*/
 	/*padding-left: 0.3rem;*/
 	display: inline-block;
-	font-size: 0.24rem;
+	font-size: 0.28rem;
 	font-family: '微软雅黑';
 }
 .downbox tr {
@@ -139,6 +139,7 @@ td {
 	margin: 0.28rem auto;
 	font-size: 0.28rem;
 	background-color: #ef9008;
+	cursor: pointer;
 }
 .border-bot {
 	border-bottom: 1px solid #fff;
