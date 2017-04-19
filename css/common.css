@@ -69,10 +69,7 @@ body {
 	font-weight: bold;
 	line-height: 1;
 }
-.active {
-	color: #0894ec;
-	font-size: 18px;
-}
+
 .topnav {
 	position: fixed;
 	top: 0px;
