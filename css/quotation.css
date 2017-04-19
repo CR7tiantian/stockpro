@@ -86,15 +86,15 @@
 	display: inline-block;
 	width: 33.33333%;
 	font-size: 14px;
-	height: 40px;
-	line-height: 40px;
+	height: 0.8rem;
+	line-height: 0.8rem;
 	text-align: center;
 	font-family: '微软雅黑';
 	color: red;
 }
 .stockname,.stockcode {
-	height: 20px;
-	line-height: 20px;
+	height: 0.4rem;
+	line-height: 0.4rem;
 	color: #a7a7a7;
 }
 /*翻页*/
@@ -113,10 +113,10 @@
 	font-size: 14px;
 	font-weight: bold;
 	border-radius: 4px;
-	background:#fff url('../images/left-sm-arrow.png') -0.02rem 0.1rem no-repeat;
+	background:#fff url('../images/left-sm-arrow.png') left center no-repeat;
 }
 .next-page {
-	background:#fff url('../images/right-sm-arrow.png') 0.98rem 0.1rem no-repeat;
+	background:#fff url('../images/right-sm-arrow.png') right center no-repeat;
 }
 .pages {
 	width: 1.2rem;

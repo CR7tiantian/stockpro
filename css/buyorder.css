@@ -5,7 +5,7 @@ body {
 }
 td {
 	font-family: '';
-	font-size: 16px;
+	font-size: 0.32rem;
 	color: #fff;
 
 }
@@ -20,43 +20,54 @@ td {
 	border-top: 1px solid #eee;
 }
 .k_img {
-	width: 4rem;
+	width: 53.3333%;
 	height: 5.4rem;
 	border-bottom: none;
 }
 .wudang {
-	width: 3.5rem;
+	width: 46.6666%;
 	float: right;
 	border-collapse:collapse;
 
 }
 .first-row {
-	height: 18px;
+	height: 0.36rem;
 }
 .first-row td {
 	width: 33.333%;
 	text-align: center;
 	color: #fff;
-	height: 18px;
-	line-height: 18px;
-	font-size: 14px;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: 0.28rem;
 }
 .other-row td {
 	height: 0.5rem;
 	line-height: 0.5rem;
 	text-align: center;
-	font-size: 14px;
+	font-size: 0.28rem;
+}
+/*最下面区域*/
+.downbox {
+	width: 100%;
 }
 .downbox td {
-	padding-left: 0.3rem;
+	/*width: 25%;*/
+	/*padding-left: 0.3rem;*/
 	display: inline-block;
-	/*width: 80px;*/
-	font-size: 14px;
+	font-size: 0.24rem;
 	font-family: '微软雅黑';
 }
 .downbox tr {
-	height: 24px;
-	line-height: 24px;
+	height: 0.48rem;
+	line-height: 0.48rem;
+}
+.downbox tr td:nth-child(odd) {
+	width: 25%;
+	padding-left: 5%;
+}
+.downbox tr td:nth-child(even) {
+	width: 25%;
 }
 .bourse {
 	width: 1.6rem;
@@ -65,7 +76,7 @@ td {
 	height: 25px;
 }
 .bourse option {
-	font-size: 16px;
+	font-size: 0.32rem;
 	color: #000;
 }
 .buybtn {
@@ -75,58 +86,58 @@ td {
 	text-align: center;
 	height: 35px;
 	line-height: 35px;
-	margin:0 auto;
-	margin-top: 0.1rem;
-	font-size: 18px;
+	margin:0.1rem auto 1rem auto;
+	font-size: 0.36rem;
 	cursor: pointer;
 	color: #fff;
 
 }
 .f13 {
 	color: #ff3300;
-	font-size: 16px;
+	font-size: 0.32rem;
 }
 .g13 {
 	color: green !important;
 }
 .table-header {
+	width: 82%;
 	text-align:left; 
 	white-space:nowrap;
 }
 .firsttd {
 	width: 2rem;
 	color: red;
-	font-size: 24px;
+	font-size: 0.48rem;
 	font-weight: bold;
 }
 .yellow {
 	color: yellow;
-	font-size: 16px;
+	font-size: 0.32rem;
 }
 .width100 {
 	width: 2rem;
 }
 .red16 {
 	color: red;
-	font-size: 16px;
+	font-size: 0.32rem;
 }
 .red18 {
 	color: red;
-	font-size: 16px;
+	font-size: 0.32rem;
 }
 .green16 {
 	color: #0ade12;
-	font-size: 16px;
+	font-size: 0.32rem;
 }
 .zixuanbtn {
 	display: inline-block;
-	width: 1rem;
+	width: 14%;
 	height: 0.6rem;
 	line-height: 0.6rem;
 	color: #fff;
 	text-align: center;
-	margin: 14px auto;
-	font-size: 14px;
+	margin: 0.28rem auto;
+	font-size: 0.28rem;
 	background-color: #ef9008;
 }
 .border-bot {
@@ -137,14 +148,11 @@ td {
 	color: #ff3300;
 }
 .codeipt {
-	width: 1.3rem;
-	height: 22px;
+	width: 80%;
+	height: 0.44rem;
 	outline: none;
 	background-color: #000;
 	border:1px solid #eee;
 	color: #fff;
 	border-radius: 4px;
-}
-.width80 {
-	width: 1.7rem;
 }
