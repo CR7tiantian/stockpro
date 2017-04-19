@@ -76,7 +76,7 @@
 }
 .stocklist {
 	list-style: none;
-	height: 6rem;
+	height: 5rem;
 	overflow: auto;
 }
 .list-detail {
